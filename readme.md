@@ -1,39 +1,22 @@
-<p align="center">
-  <img width="200" height="100" src="/example/assets/texture/logo.png">
-</p>
 
-A zig-contained library for Windows and Ubuntu that automatically compiles and
-links ImGui, OpenGL, stb_image, and GLFW into typed packages.
 
-ZT will always target the latest dev version of Zig, and will
-create a branch for stable releases when convenient.
+<h1 align=center>CMake for absolte beginners (by a recent absolute beginner)</h1>
 
-Check out the [wiki](https://github.com/JonSnowbd/ZT/wiki) for documentation and help.
+Go [here](https://makefiletutorial.com/) for advanced stuff. 
 
-<h1 align=center>For Applications</h1>
-<p align="center">
-  <img width="640px" height="390px" src="https://cdn.discordapp.com/attachments/602279341371424780/864667669940273172/unknown.png">
-</p>
+<h1 align=center>Building and installing applications you downloaded that already have a Makefile</h1>
 
-Get your applications done quick with industry standard ImGui library, used
-by a bunch of applications for its convenience and power.
-
-Using ImGui is as simple as calling the functions! ZT will render
-everything for you without ever needing to touch gamedev code.
+Go to the source folder you downloaded and extract it. Open a terminal. If the source directory already has a build folder cd to it, if not cd to the source directory and run "mkdir build" then "cd build" after that run "make" if you are on a UNIX system (like Linux or MacOS) and you want the application to be installed where your normal applications are so you can find it easily and search for it run "make install". 
 
 <hr/>
 
-<h1 align=center>For Games</h1>
-<p align="center">
-  <img width="640px" height="390px" src="https://cdn.discordapp.com/attachments/602279341371424780/864667491817095218/unknown.png">
-</p>
+<h1 align=center>Building and installing applications you downloaded that only have a CMakelists.txt</h1>
 
-With ImGui at the forefront for free, debugging and creating editors
-for your game is as smooth as it can be without deciding anything for you
+Go to the source folder you downloaded and extract it. Open a terminal. If the source directory already has a build folder cd to it, if not cd to the source directory and run "mkdir build" then "cd build" after that run "cmake .." then run "make" if you are on a UNIX system (like Linux or MacOS) and you want the application to be installed where your normal applications are so you can find it easily and search for it run "make install". 
 
 <hr/>
 
-# Overview
+# Dependency errors 
 
 To work with ZT You will need:
 
